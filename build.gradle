@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+}
+
+group 'me.frostydev'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'net.java.jinput', name: 'jinput', version: '2.0.5'
+    api 'org.apache.httpcomponents:httpclient:4.5.7'
+    implementation 'org.apache.commons:commons-lang3:3.5'
+}
